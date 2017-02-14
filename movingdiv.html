@@ -1,0 +1,44 @@
+<!Doctype>
+<html>
+<head>
+<script ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script = "text/javascript">
+$(document).ready(function() {
+    $("#type").click(function (){
+    $("#source").prependTo("#destination");
+
+    });
+});
+
+</script>
+</head>
+<style>
+  #destination {
+    color: purple;
+    background-color: black;
+    font-family: monospace;
+    font-size: 80px;
+    height:100px;
+  }
+  #source {
+    color: blue;
+    background-color: yellow;
+    padding:10;
+    height: 55;
+    font-family: monospace;
+    font-size: 60px;
+  }
+</style>
+<body>
+  <button id="type">yo</button>
+  <div id="source">
+a little more text.
+  </div>
+  <br>
+
+  <div id="destination">
+here is a little text.11
+  </div>
+
+</body>
+</html>

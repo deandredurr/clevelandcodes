@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+
+<body>
+    <table id="fun">
+        
+        <tr>
+            <td>line</td>
+            <td>line2</td>
+        </tr>
+        <tr>
+            <td>line3</td>
+            <td>line4</td>
+        </tr>
+        
+    </table>
+
+    <button onclick="myfunction()">row baby</button>
+    <script type="text/javascript" language="javascript">
+        function myfunction() {
+            var table = document.getElementById("fun");
+            var row = table.insertRow(0)
+            var cell0 = row.insertCell(0);
+            var cell1 = row.insertCell(1);
+
+            cell1.innerHTML = "cell1";
+            cell0.innerHTML = "cell0";
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
